@@ -102,3 +102,9 @@ a[href="https://google.com"], a[href="https://facebook.com"]
 #yes:hover {
   color: var(--text-color-hover);
 }
+
+#visible:hover #eye,
+#visible:hover {
+  cursor: pointer;
+  fill: var(--text-color-hover);
+}

@@ -27,12 +27,6 @@ body {
   background-repeat: no-repeat;
 }
 
-svg {
-  position: absolute;
-  top: 27px;
-  left: 10px;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -89,6 +83,13 @@ h4 > a {
   height: 56px;
   padding-top: 18px;
   border-radius: 6px;
+}
+
+#tlc,
+#user {
+  position: absolute;
+  top: 27px;
+  left: 10px;
 }
 
 #text,
@@ -156,6 +157,22 @@ h4 > a {
 
 #fesnuk {
   background-image: url(https://www.chess.com/bundles/web/images/socials/facebook.a8fa98c7.svg);
+}
+
+#visible {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  margin-left: auto;
+  padding-top: 5px;
+  right: 2px;
+  top: 16px;
+  width: 35px;
+  height: 40px;
+}
+
+#new {
+  margin-right: 4px;
 }
 
 .hr {
