@@ -1,9 +1,10 @@
-/* Puqi ngana */
+/* Variabel */
 :root {
   --border-color: hsla(0, 0%, 100%, 0.1);
   --border-focus: hsla(0, 0%, 100%, 0.25);
   --text-color: hsla(0, 0%, 100%, 0.72);
   --text-color-subtle: hsla(0, 0%, 100%, 0.5);
+  --text-color-hover: hsla(0, 0%, 100%, 0.85);
   --color-bg-input: hsla(0, 0%, 100%, 0.08);
 }
 
@@ -61,6 +62,12 @@ h4 {
   background-color: #201e1c;
 }
 
+#auth > a {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
 #text,
 #password {
   position: relative;
@@ -82,7 +89,7 @@ h4 {
 #auth {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 100%;
 }
 

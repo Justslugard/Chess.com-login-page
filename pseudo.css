@@ -24,4 +24,49 @@ input[type="password"] {
 
 label[for="rmbrme"] {
   color: var(--text-color);
+  margin-left: 7px;
+  margin-top: 2px;
+  font-size: 0.9rem;
+}
+
+/* input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--color-bg-input);
+  border: 1px solid var(--text-color-subtle);
+  width: 5px;
+} */
+input[type="checkbox"] {
+  appearance: none;
+  margin-top: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--color-bg-input);
+  border: 1px solid var(--text-color-subtle);
+  border-radius: 4px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--text-color-subtle);
+  border-color: transparent;
+}
+
+input[type="checkbox"]:checked::after {
+  top: -3px;
+  right: 1px;
+  content: "✓";
+  position: absolute;
+}
+
+input[type="checkbox"]:checked:hover {
+  background-color: var(--text-color);
+}
+
+input[type="checkbox"]:hover,
+label[for="rmbrme"]:hover {
+  cursor: pointer;
+}
+
+#auth > a:hover {
+  color: var(--text-color-hover);
 }
