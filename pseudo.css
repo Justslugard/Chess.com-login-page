@@ -67,10 +67,6 @@ label[for="rmbrme"]:hover {
   cursor: pointer;
 }
 
-#auth > a:hover {
-  color: var(--text-color-hover);
-}
-
 input[type="button"] {
   border: none;
   background-color: #81b64c;
@@ -88,4 +84,17 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: #a3d160;
   cursor: pointer;
+}
+
+a[href="https://google.com"], a[href="https://facebook.com"]
+{
+  margin-top: 10px;
+}
+
+#auth > a:hover {
+  color: var(--text-color-hover);
+}
+
+#loginWays > a:hover {
+  background-color: var(--color-bg-neutral);
 }
