@@ -3,6 +3,7 @@ const pass = document.querySelector("#pass");
 const eye = document.querySelector("#eye");
 
 vs.addEventListener("click", () => {
+  // Kalo input tipe password yang ini kalo ga yang satu lagi. Kira kira begitulah 😹
   if (pass.type === "password") {
     pass.type = "text";
     eye.attributes["data-glyph"].nodeValue = "media-eye-off";

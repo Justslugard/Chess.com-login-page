@@ -1,8 +1,6 @@
+/* Input user */
 input[type="text"]:hover,
-input[type="password"]:hover {
-  border-color: var(--border-focus);
-}
-
+input[type="password"]:hover,
 input[type="text"]:focus,
 input[type="password"]:focus {
   outline: 0;
@@ -20,6 +18,16 @@ input[type="password"] {
   background-color: var(--color-bg-input);
   border: 1px solid var(--border-color);
   color: var(--text-color);
+}
+
+#visible:hover #eye,
+#visible:hover {
+  cursor: pointer;
+  fill: var(--text-color-hover);
+}
+
+#auth > a:hover {
+  color: var(--text-color-hover);
 }
 
 label[for="rmbrme"] {
@@ -87,25 +95,17 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
+/* LoginWays */
 a[href="https://google.com"], a[href="https://facebook.com"]
 {
   margin-top: 10px;
-}
-
-#auth > a:hover {
-  color: var(--text-color-hover);
 }
 
 #loginWays > a:hover {
   background-color: var(--color-bg-neutral);
 }
 
+/* Teks yang paling bawah */
 #yes:hover {
   color: var(--text-color-hover);
-}
-
-#visible:hover #eye,
-#visible:hover {
-  cursor: pointer;
-  fill: var(--text-color-hover);
 }

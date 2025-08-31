@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
 } */
 
-.fixed-bg {
+#fixedBg {
   background: #302e2b url(images/bg.png) center 100% / cover no-repeat;
   transform: translate(-50%, -50%);
   position: fixed;
@@ -38,6 +38,7 @@
   z-index: -100;
 }
 
+/* Isi */
 header {
   display: flex;
   flex-direction: column;
@@ -46,10 +47,12 @@ header {
   margin-top: 217px;
 }
 
+/* Judul caturnya */
 img {
   margin-bottom: 29px;
 }
 
+/* Input user */
 form {
   display: flex;
   flex-direction: column;
@@ -58,6 +61,122 @@ form {
   width: 290;
 }
 
+#loginkan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #262421;
+  border-radius: 10px 10px 0 0;
+  padding: 40px 40px 10px 40px;
+  width: 400px;
+  height: 628px;
+}
+
+#tlc,
+#user {
+  position: absolute;
+  top: 27px;
+  left: 10px;
+}
+
+#visible {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  margin-left: auto;
+  padding-top: 5px;
+  right: 2px;
+  top: 16px;
+  width: 35px;
+  height: 40px;
+}
+
+#text,
+#password {
+  position: relative;
+}
+
+#auth > a {
+  color: var(--text-color);
+  font-size: 0.82rem;
+  margin-top: 4px;
+}
+
+#auth {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Misahin yang garis tengah */
+#separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#or {
+  color: var(--text-color-subtle);
+  font-size: 0.89rem;
+  padding: 0 25px 0 25px;
+}
+
+.hr {
+  width: 150px;
+  height: 0.05rem;
+  background-color: var(--border-color);
+}
+
+/* Apple, Goole, Facebook */
+#loginWays > a {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color-hover);
+  background-color: var(--color-bg-second);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.5);
+  font-size: 0.88rem;
+  font-weight: 600;
+  width: 100%;
+  height: 56px;
+  padding-top: 18px;
+  border-radius: 6px;
+}
+
+#loginWays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+#ipong,
+#gugel,
+#fesnuk {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: 30px;
+  position: absolute;
+}
+
+#ipong {
+  background-image: url(https://www.chess.com/bundles/web/images/socials/apple.d77d954d.svg);
+}
+
+#gugel {
+  background-image: url(https://www.chess.com/bundles/web/images/socials/google.9f87d284.svg);
+}
+
+#fesnuk {
+  background-image: url(https://www.chess.com/bundles/web/images/socials/facebook.a8fa98c7.svg);
+}
+
+/* Yang paling bawah */
 h4 {
   display: flex;
   align-items: center;
@@ -75,119 +194,6 @@ h4 > a {
   font-weight: 600;
 }
 
-#auth > a {
-  color: var(--text-color);
-  font-size: 0.82rem;
-  margin-top: 4px;
-}
-
-#loginWays > a {
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text-color-hover);
-  background-color: var(--color-bg-second);
-  box-shadow: 0 3px rgba(0, 0, 0, 0.5);
-  font-size: 0.88rem;
-  font-weight: 600;
-  width: 100%;
-  height: 56px;
-  padding-top: 18px;
-  border-radius: 6px;
-}
-
-#tlc,
-#user {
-  position: absolute;
-  top: 27px;
-  left: 10px;
-}
-
-#text,
-#password {
-  position: relative;
-}
-
-#ipong,
-#gugel,
-#fesnuk {
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 24px;
-  height: 24px;
-  top: 16px;
-  left: 30px;
-  position: absolute;
-}
-
-#separator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#or {
-  color: var(--text-color-subtle);
-  font-size: 0.89rem;
-  padding: 0 25px 0 25px;
-}
-
-#auth {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  width: 100%;
-}
-
-#loginWays {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-#loginkan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #262421;
-  border-radius: 10px 10px 0 0;
-  padding: 40px 40px 10px 40px;
-  width: 400px;
-  height: 628px;
-}
-
-#ipong {
-  background-image: url(https://www.chess.com/bundles/web/images/socials/apple.d77d954d.svg);
-}
-
-#gugel {
-  background-image: url(https://www.chess.com/bundles/web/images/socials/google.9f87d284.svg);
-}
-
-#fesnuk {
-  background-image: url(https://www.chess.com/bundles/web/images/socials/facebook.a8fa98c7.svg);
-}
-
-#visible {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  margin-left: auto;
-  padding-top: 5px;
-  right: 2px;
-  top: 16px;
-  width: 35px;
-  height: 40px;
-}
-
 #new {
   margin-right: 4px;
-}
-
-.hr {
-  width: 150px;
-  height: 0.05rem;
-  background-color: var(--border-color);
 }
