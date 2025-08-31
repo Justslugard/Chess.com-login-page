@@ -81,9 +81,8 @@ h4 {
 
 #or {
   color: var(--text-color-subtle);
-  font-weight: 100;
-  font-size: 0.85rem;
-  padding: 0 12px 0 12px;
+  font-size: 0.89rem;
+  padding: 0 25px 0 25px;
 }
 
 #auth {
@@ -113,6 +112,6 @@ h4 {
 
 .hr {
   width: 150px;
-  height: 0.1rem;
+  height: 0.05rem;
   background-color: var(--border-color);
 }
