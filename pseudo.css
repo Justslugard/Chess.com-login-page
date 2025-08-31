@@ -98,3 +98,7 @@ a[href="https://google.com"], a[href="https://facebook.com"]
 #loginWays > a:hover {
   background-color: var(--color-bg-neutral);
 }
+
+#yes:hover {
+  color: var(--text-color-hover);
+}
