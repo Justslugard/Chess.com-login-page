@@ -79,6 +79,7 @@ input[type="button"] {
   font-size: 1.4rem;
   font-weight: 750;
   box-shadow: 0px 4px 0px 0px #548c43;
+  transition: background-color 0.2s;
 }
 
 input[type="button"]:hover {
