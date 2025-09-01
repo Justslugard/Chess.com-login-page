@@ -21,6 +21,4 @@ vs.addEventListener("click", () => {
 log.addEventListener("click", () => {
   const user = document.querySelector('input[type="text"]').value;
   const ssap = document.querySelector('input[type="password"]').value;
-
-  if (user === "" || ssap === "") console.log("Jembut");
 });

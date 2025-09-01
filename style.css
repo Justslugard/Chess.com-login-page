@@ -15,17 +15,19 @@
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  scrollbar-color: gray black;
 }
 
 /* Latar ya ges */
-/* body {
-  background-image: url(images/bg.png);
+body {
+  /* background-image: url(images/bg.png);
   background-color: #322e2b;
   background-position-y: -85px;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-} */
+  background-repeat: no-repeat; */
+  background-color: #302e2b;
+}
 
 #fixedBg {
   background: #302e2b url(images/bg.png) center 100% / cover no-repeat;
@@ -44,26 +46,28 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 217px;
+  height: max(100vh, 850px);
 }
 
 /* Judul caturnya */
 img {
   margin-bottom: 29px;
+  cursor: pointer;
 }
 
 /* Error field */
-#err {
+/* #err {
   background-color: #fa412d;
+  font-size: 0.95rem;
   width: 100%;
   color: white;
   text-align: center;
   border-radius: 3px;
   padding-top: 14px;
   padding-bottom: 14px;
-  margin-bottom: 12px;
-  /* display: none; */
-}
+  margin-bottom: 14px;
+  display: none;
+} */
 
 /* Nampung loginWays & input user */
 #loginkan {
@@ -74,7 +78,7 @@ img {
   border-radius: 10px 10px 0 0;
   padding: 40px 40px 10px 40px;
   width: 400px;
-  height: 100%;
+  height: 628px;
 }
 
 /* Input user */
@@ -139,7 +143,7 @@ form {
 
 .hr {
   width: 150px;
-  height: 0.05rem;
+  height: 0.06rem;
   background-color: var(--border-color);
 }
 
