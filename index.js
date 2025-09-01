@@ -1,6 +1,7 @@
 const vs = document.querySelector("#visible");
 const pass = document.querySelector("#pass");
 const eye = document.querySelector("#eye");
+const log = document.querySelector("#log");
 
 vs.addEventListener("click", () => {
   // Kalo input tipe password yang ini kalo ga yang satu lagi. Kira kira begitulah 😹
@@ -15,4 +16,11 @@ vs.addEventListener("click", () => {
     eye.innerHTML =
       '<path xmlns="http://www.w3.org/2000/svg" d="M12 20.2999C6.99996 20.2999 2.86996 17.2699 0.499961 13.2999C0.0299609 12.3999 0.0299609 11.6699 0.499961 10.7699C2.82996 6.76992 6.99996 3.66992 12 3.66992C17 3.66992 21.17 6.76992 23.5 10.7699C23.97 11.6699 23.97 12.3999 23.5 13.2999C21.13 17.2699 17 20.2999 12 20.2999ZM12 16.3299C14.4 16.3299 16.33 14.4299 16.33 12.0299C16.33 9.62992 14.4 7.65992 12 7.65992C9.59996 7.65992 7.66996 9.62992 7.66996 12.0299C7.66996 14.4299 9.59996 16.3299 12 16.3299Z"></path>';
   }
+});
+
+log.addEventListener("click", () => {
+  const user = document.querySelector('input[type="text"]').value;
+  const ssap = document.querySelector('input[type="password"]').value;
+
+  if (user === "" || ssap === "") console.log("Jembut");
 });
