@@ -2,6 +2,10 @@ const vs = document.querySelector("#visible");
 const pass = document.querySelector("#pass");
 const eye = document.querySelector("#eye");
 const log = document.querySelector("#log");
+const err = document.querySelector("#err");
+
+const auth = "Justslugard";
+const pw = "fakdpr";
 
 vs.addEventListener("click", () => {
   // Kalo input tipe password yang ini kalo ga yang satu lagi. Kira kira begitulah 😹
@@ -20,5 +24,16 @@ vs.addEventListener("click", () => {
 
 log.addEventListener("click", () => {
   const user = document.querySelector('input[type="text"]').value;
-  const ssap = document.querySelector('input[type="password"]').value;
+  const ssap = pass.value;
+
+  if (user === "" || ssap === "") {
+    err.textContent = "All fields are required"
+    err.style.display = "block"
+  } else if (user !== auth || ssap !== pw) {
+    err.style.display = "block"
+    err.textContent = "Invalid username or password";
+  } else {
+    err.style.display = "none"
+    window.open("https://github.com/Justslugard");
+  }
 });
